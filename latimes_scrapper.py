@@ -241,9 +241,10 @@ class LaTimesScrapper:
         # Create an empty DataFrame to store the news data
         df = pd.DataFrame()
 
+        n_pages_extracted = 1
         while True:
 
-            log.info(f"Extracting news from page {n_pages_extracted}")
+            log.info(f"Extracting news from page {n_pages_extracted}º")
 
             # Extract current news list in the page
             news_list_locator = "xpath://ul[@class='search-results-module-results-menu']"
